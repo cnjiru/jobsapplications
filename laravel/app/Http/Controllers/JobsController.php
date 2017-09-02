@@ -45,10 +45,13 @@ class JobsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($jobsID)
     {
         //
-	return $id;
+//	return view('job.view');
+	$job = Job::find($jobsID);
+	
+        return view('job.view',compact('job'));
     }
 
     /**

@@ -9,10 +9,10 @@
                 <h2 class="medium-title">Job Information</h2>
                 <div class="box">
                   <div class="text-left">
-                    <h3><a href="#">Web Developer</a></h3>
+                    <h3><a href="#">{{ $job->jobTitle }}</a></h3>
                     <p>LemonKids LLC <em>(View All Jobs)</em></p>
                     <div class="meta">
-                      <span><a href="#"><i class="ti-location-pin"></i> Nationwide</a></span>
+                      <span><a href="#"><i class="ti-location-pin"></i> {{ $job->location }}</a></span>
                       <span><a href="#"><i class="ti-calendar"></i> Dec 30, 2017 - Feb 20, 2018</a></span>
                     </div>
                     <strong class="price"><i class="fa fa-money"></i>$7000 - $7500</strong>
@@ -21,8 +21,7 @@
                   </div>                
                   <div class="clearfix">
                     <h4>Overview</h4>
-                    <p>LemonKids LLC. In marketing communications, we dream it and create it. All of the company’s promotional and communication needs are completed in-house by these “creatives” in an advertising agency-based set-up. This includes everything from advertising, promotions and print production to media relations, exhibition coordination and website maintenance. Everyone from artists, writers, designers, media buyers, event coordinators, video producers/editors and public relations specialists work together to bring campaigns and product-centric promotions to life.</p>
-                    <p>If you’re a dreamer, gather up your portfolio and show us your vision. Garmin is adding one more enthusiastic individual to our in-house Communications expert team.</p>
+                    <p>{{ $job->jobDescription }}.</p>
                     <h4>Qualification</h4>
                     <p>Minimum of 5 years creative experience in a graphic design studio or advertising ad agency environment is required. Qualified candidates for this role will possess the following education, experience and skills:</p>
                     <ul>
